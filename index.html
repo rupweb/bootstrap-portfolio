@@ -9,33 +9,41 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Portfolio</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#top">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#info">My info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Work</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                <a class="nav-link dropdown-toggle" href="#skills" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Skills
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#skills">HTML</a></li>
+                  <li><a class="dropdown-item" href="#skills">CSS</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#skills">Javascript</a></li>
+                  <li><a class="dropdown-item" href="#skills">React</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="#about">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Backup</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -46,66 +54,81 @@
         </div>
       </nav>
 
-      <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      <div class="element"></div>
+
+      <div class="container d-flex h-100" id="info">
+        <div class="row justify-content-center align-self-center w-100">
+            <div class="jumbotron">
+                <hr class="my-4">
+                <h1 class="display-4 ">Rupert St J W</h1>
+                <p class="lead">Working through the bootcamp for full stack development</p>
+                <p><img src="images/rupert.jpg"></p>
+                <p>Developer with Java, C#, SQL and now HTML, CSS & Javascript</p>
+                <hr class="my-4">
+                <p><a class="btn btn-primary btn-lg" href="http://www.webstersystems.co.uk" role="button">Workspace</a></p>
+            </div>
+         </div>
       </div>
 
-      <div class="container text-center">
+      <div class="element"></div>
+
+      <div class="container text-center" id="work">
         <div class="row">
           <div class="col">
             <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="images/challenge1.jpg" class="card-img-top fixed-size-img" alt="challenge1">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">Module 1 challenge</h5>
+                  <p class="card-text">Refactor code for accessibility</p>
+                  <a href="https://rupweb.github.io/bootcamp-module1-challenge/" class="btn btn-primary">Go</a>
                 </div>
-              </div>
+            </div>
           </div>
           <div class="col">
             <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="images/challenge2.jpg" class="card-img-top fixed-size-img" alt="challenge2">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">Module 2 challenge</h5>
+                  <p class="card-text">A web portfolio page</p>
+                  <a href="https://rupweb.github.io/bootcamp-module2-challenge/" class="btn btn-primary">Go</a>
                 </div>
-              </div>
+            </div>
           </div>
           <div class="col">
             <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="images/ws1.jpg" class="card-img-top fixed-size-img" alt="Webster Systems">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">My website</h5>
+                  <p class="card-text">Webster Systems Ltd website</p>
+                  <a href="http://www.webstersystems.co.uk" class="btn btn-primary">Go</a>
                 </div>
-              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <ul class="list-group">
-        <li class="list-group-item active" aria-current="true">An active item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-        <li class="list-group-item">A fourth item</li>
-        <li class="list-group-item">And a fifth one</li>
+      <div class="element"></div>
+
+      <ul class="list-group element" id="skills">
+        <li class="list-group-item active" aria-current="true">List of skills</li>
+        <li class="list-group-item">HTML</li>
+        <li class="list-group-item">CSS</li>
+        <li class="list-group-item">Javascript</li>
+        <li class="list-group-item">React</li>
       </ul>
 
-      <section class="about">
+      <div class="element"></div>
+
+      <section class="about element" id="about">
         <h2>About me</h2>
+        <p>I am a software analyst developer working mainly in Java, C# and back end micro services in financial tech</p>
       </section>
+
+      <div class="element"></div>
 
       <!-- Footer -->
       <footer>
-         <h3>
-           Footer
-         </h3>
+        <a href="#top">Back to Top</a>
       </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

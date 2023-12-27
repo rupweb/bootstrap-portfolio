@@ -1,0 +1,73 @@
+a {
+    color: black; /* Change as needed */
+    text-decoration: none; /* Removes underline */
+    padding: 5px; /* Adds space around the text */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    display: inline-block; /* Allows padding and background color */
+}
+
+/* Style for the link on hover */
+a:hover {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    background-color: lightgreen; /* Green background */
+    color: white; /* Optional: change text color on hover for better contrast */
+}
+
+html, body {
+    scroll-behavior: smooth;
+    width: 100%; /* Ensure the full width is used */
+    margin: 0; /* Reset default margin */
+}
+  
+.container {
+    height: 100%; /* Set container to full available height */
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+  
+.row {
+    width: 100%;
+}
+  
+.jumbotron {
+    text-align: center; /* Center the text and content */
+}
+
+.fixed-size-img {
+    height: 200px; /* Fixed height */
+    width: 100%; /* Full width of the card */
+    object-fit: contain; /* Resizes the image to fit while maintaining aspect ratio */
+    object-position: center; /* Center the image within the element's box */
+}
+
+.element {
+    padding: 20px; /* Adds 10 pixels of space inside all sides of the element */
+}
+
+/* Add some padding to the footer and style the link */
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+footer a {
+    text-decoration: none;
+    color: #007bff;
+}
+  
+/* Add a media query for screens that are at least 800px wide */
+@media screen and (min-width: 800px) {
+    p {
+        color: darkblue; /* Paragraphs will be blue on screens wider than 800px */
+    }
+}
+  
+/* Target screens between 800px and 1200px wide */
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    p {
+        color: darkgreen;
+    }
+  }
+    
